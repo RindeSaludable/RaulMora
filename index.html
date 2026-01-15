@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raúl Mora - Cambia Tu Vida Financiera</title>
+	<!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '654590593697054');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=654590593697054&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+	
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 20px 60px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .hero .subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        .hero .pain-points {
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+
+        /* Video Section */
+        .video-section {
+            background: #f8f9fa;
+            padding: 60px 20px;
+        }
+
+        .video-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #000;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            aspect-ratio: 16/9;
+            position: relative;
+        }
+
+        .video-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* CTA Button */
+        .cta-button {
+            display: inline-block;
+            background: #25D366;
+            color: white;
+            padding: 18px 45px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+        }
+
+        .cta-button:hover {
+            background: #128C7E;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+        }
+
+        .cta-button::before {
+            content: "📱 ";
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 80px 20px;
+            background: white;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .about-image {
+            width: 100%;
+            height: 400px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .about-text h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            color: #2d3748;
+        }
+
+        .about-text p {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            color: #4a5568;
+        }
+
+        /* Benefits Section */
+        .benefits-section {
+            padding: 80px 20px;
+            background: #f8f9fa;
+        }
+
+        .benefits-section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            color: #2d3748;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .benefit-card {
+            background: white;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .benefit-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .benefit-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: #2d3748;
+        }
+
+        .benefit-card p {
+            color: #4a5568;
+        }
+
+        /* Not For Everyone Section */
+        .not-for-everyone {
+            padding: 80px 20px;
+            background: #2d3748;
+            color: white;
+            text-align: center;
+        }
+
+        .not-for-everyone h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+
+        .not-for-everyone p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            line-height: 1.8;
+        }
+
+        .criteria-list {
+            max-width: 600px;
+            margin: 40px auto;
+            text-align: left;
+        }
+
+        .criteria-item {
+            display: flex;
+            align-items: start;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .criteria-item::before {
+            content: "✗";
+            color: #fc8181;
+            font-size: 1.5rem;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        /* Final CTA Section */
+        .final-cta {
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .final-cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .final-cta p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+        }
+
+        /* Disclaimer */
+        .disclaimer {
+            padding: 40px 20px;
+            background: #f8f9fa;
+            text-align: center;
+        }
+
+        .disclaimer p {
+            font-size: 0.9rem;
+            color: #718096;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero .subtitle {
+                font-size: 1.1rem;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            .about-image {
+                height: 300px;
+            }
+
+            .about-text h2,
+            .benefits-section h2,
+            .not-for-everyone h2,
+            .final-cta h2 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>¿Cansado de Trabajar Más y Ganar Menos?</h1>
+            <p class="subtitle">Descubre cómo transformar tu situación financiera sin dejar tu trabajo actual</p>
+            <p class="pain-points">Sin tiempo • Con deudas • Estancado en tu empleo • Sin resultados</p>
+            <a href="https://wa.me/51929513801?text=Hola%20Raúl,%20quiero%20información%20sobre%20el%20modelo%20de%20negocio" class="cta-button" onclick="fbq('track', 'Lead');">Escríbeme por WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section">
+        <div class="container">
+            <div class="video-container">
+                <video controls controlsList="nodownload" preload="metadata">
+                    <source src="https://aware-cursos.s3.amazonaws.com/Videos%20de%20Presentaci%C3%B3n/Negocio%20FuXion.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de video.
+                </video>
+            </div>
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="https://wa.me/51929513801?text=Hola%20Raúl,%20vi%20tu%20video%20y%20quiero%20más%20información" class="cta-button" onclick="fbq('track', 'Lead');">Quiero Más Información</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="about-content">
+            <div class="about-image">
+                <img src="assets/Foto.jpeg" alt="Raúl Mora">
+            </div>
+            <div class="about-text">
+                <h2>Sobre Mí</h2>
+                <p>Hola, soy <strong>Raúl Mora</strong>. Hace unos años estaba exactamente donde tú podrías estar ahora: trabajando largas horas, con poco dinero al final del mes, y sin ver un futuro diferente.</p>
+                <p>Todo cambió cuando descubrí un modelo de negocio que me permitió generar ingresos adicionales sin abandonar mi estabilidad. Hoy ayudo a personas como tú a lograr lo mismo.</p>
+                <p>No soy un gurú, soy alguien que entendió que con el sistema correcto, disciplina y guía, cualquiera puede cambiar su realidad financiera.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section">
+        <div class="container">
+            <h2>¿Por Qué Este Modelo Funciona?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">⏰</div>
+                    <h3>Trabaja en Tus Tiempos</h3>
+                    <p>Puedes empezar con 1-2 horas al día. No necesitas dejar tu trabajo actual.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">💰</div>
+                    <h3>Ingresos Escalables</h3>
+                    <p>Crea una fuente de ingresos que crece con tu esfuerzo y dedicación.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">📚</div>
+                    <h3>Capacitación Completa</h3>
+                    <p>Te enseño paso a paso todo lo que necesitas saber. No necesitas experiencia previa.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🤝</div>
+                    <h3>Acompañamiento Personal</h3>
+                    <p>No estás solo. Te guío en cada etapa de tu desarrollo.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🏠</div>
+                    <h3>Desde Casa</h3>
+                    <p>Todo lo que necesitas es un celular y conexión a internet.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🌱</div>
+                    <h3>Bienestar Integral</h3>
+                    <p>Productos de salud y bienestar que mejoran tu vida mientras generas ingresos.</p>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 50px;">
+                <a href="https://wa.me/51929513801?text=Hola%20Raúl,%20me%20interesan%20los%20beneficios%20del%20modelo" class="cta-button" onclick="fbq('track', 'Lead');">Quiero Empezar Ahora</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Not For Everyone Section -->
+    <section class="not-for-everyone">
+        <div class="container">
+            <h2>Esto NO Es Para Todos</h2>
+            <p>Quiero ser transparente contigo. Este modelo funciona, pero requiere compromiso. Si eres alguien que busca:</p>
+            <div class="criteria-list">
+                <div class="criteria-item">Dinero rápido sin esfuerzo</div>
+                <div class="criteria-item">Una fórmula mágica que haga todo por ti</div>
+                <div class="criteria-item">Resultados sin disciplina ni constancia</div>
+                <div class="criteria-item">Algo que no requiera aprendizaje</div>
+            </div>
+            <p style="margin-top: 40px; font-size: 1.3rem; font-weight: 600;">Entonces este modelo NO es para ti.</p>
+            <p style="margin-top: 20px;">Pero si estás dispuesto a trabajar duro, seguir un sistema probado y comprometerte con tu propio éxito, entonces hablemos.</p>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>¿Listo Para Dar El Primer Paso?</h2>
+            <p>Escríbeme ahora y conversemos sobre cómo este modelo puede cambiar tu situación actual</p>
+            <a href="https://wa.me/51929513801?text=Hola%20Raúl,%20estoy%20listo%20para%20empezar" class="cta-button" onclick="fbq('track', 'Lead');">Contactar Ahora</a>
+        </div>
+    </section>
+
+    <!-- Disclaimer -->
+    <section class="disclaimer">
+        <div class="container">
+            <p><strong>Aviso Importante:</strong> Los resultados presentados son ejemplos de lo que es posible lograr con dedicación y esfuerzo constante. Los resultados individuales varían y dependen completamente del esfuerzo personal, la disciplina y el compromiso de cada persona. No garantizamos ingresos específicos. Este no es un esquema para hacerte rico rápidamente, es un modelo de negocio legítimo que requiere trabajo y persistencia.</p>
+        </div>
+    </section>
+</body>
+</html>
